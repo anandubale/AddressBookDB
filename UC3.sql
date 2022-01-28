@@ -25,3 +25,15 @@ update AddressBook set Name='Mayur' where firstName ='mayur'
 
 update AddressBook set Type ='Family' where firstName='Anand'
 update AddressBook set Type ='Professional' where firstName='Swapnil'
+
+
+select count(type) 
+from AddressBook
+
+
+select Type, count(*) as TypeCount 
+from AddressBook
+group by Type;
+
+
+
