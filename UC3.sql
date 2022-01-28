@@ -12,14 +12,9 @@ email varchar(max) not null
 select*
 from AddressBook
 
+insert into AddressBook values('Swapnil','Shelar','Pawansutnagar','Mehkar','Maharastra',443301,'7986543321','swanil@gmail.com')
 
 
-insert into AddressBook values('Sandeep','shinde','bhandara','bhandara','Maharastra','443301','1234567890','sandeepshinde09@gmail.com');
-
-delete AddressBook where firstName ='Sandeep'
-
-select city,state from AddressBook;
-
-
-select COUNT(city) from AddressBook;
-select COUNT(state) from AddressBook;
+select * from AddressBook
+where city = 'Mehkar'
+order by (firstName);
