@@ -19,3 +19,7 @@ insert into AddressBook values('Sandeep','shinde','bhandara','bhandara','Maharas
 delete AddressBook where firstName ='Sandeep'
 
 select city,state from AddressBook;
+
+
+select COUNT(city) from AddressBook;
+select COUNT(state) from AddressBook;
