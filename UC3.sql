@@ -17,3 +17,5 @@ from AddressBook
 insert into AddressBook values('Sandeep','shinde','bhandara','bhandara','Maharastra','443301','1234567890','sandeepshinde09@gmail.com');
 
 delete AddressBook where firstName ='Sandeep'
+
+select city,state from AddressBook;
