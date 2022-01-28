@@ -9,12 +9,19 @@ zip int not null,
 phoneNumber varchar(12),
 email varchar(max) not null
 )
+
+
+
 select*
 from AddressBook
 
-insert into AddressBook values('Swapnil','Shelar','Pawansutnagar','Mehkar','Maharastra',443301,'7986543321','swanil@gmail.com')
 
 
-select * from AddressBook
-where city = 'Mehkar'
-order by (firstName);
+
+alter table AddressBook add Name varchar(255),Type varchar(255)
+
+update AddressBook set Name='Anand' where firstName ='Anand'
+update AddressBook set Name='Mayur' where firstName ='mayur'
+
+update AddressBook set Type ='Family' where firstName='Anand'
+update AddressBook set Type ='Professional' where firstName='Swapnil'
