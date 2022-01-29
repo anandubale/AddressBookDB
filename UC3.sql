@@ -20,6 +20,9 @@ from AddressBook
 
 alter table AddressBook add Name varchar(255),Type varchar(255)
 
+
+
+
 update AddressBook set Name='Anand' where firstName ='Anand'
 update AddressBook set Name='Mayur' where firstName ='mayur'
 
@@ -36,4 +39,8 @@ from AddressBook
 group by Type;
 
 
+delete AddressBook where firstName ='Sneha'
 
+
+insert into AddressBook(firstName,lastName,address,city,state,zip,phoneNumber,email,Name,Type) values('Sneha','Belkar','Gov hospital','kolhapur','maharastra','443301','9234927342','sneha@gmail.com','Sneha','Friend');
+insert into AddressBook(firstName,lastName,address,city,state,zip,phoneNumber,email,Name,Type) values('Sneha','Belkar','Gov hospital','kolhapur','maharastra','443301','9234927342','sneha@gmail.com','Sneha','Family');
